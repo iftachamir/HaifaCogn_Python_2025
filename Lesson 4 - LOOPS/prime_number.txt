@@ -1,0 +1,12 @@
+# Go over all numbers between 2 and 100
+for each_number in range(2, 101):
+    prime_flag = True
+    
+    # Go over all numbers until current each_number
+    for i in range(2, each_number):
+        # Check if each_number divides by i
+        if each_number % i == 0:
+            prime_flag = False
+    
+    if prime_flag==True:
+        print(each_number)
